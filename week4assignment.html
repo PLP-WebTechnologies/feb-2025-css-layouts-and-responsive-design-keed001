@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edwin</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .item {
+            background: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
+
+        /* Flexbox example for the navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Edwin Real Estate</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="item">We Offer A Wide Variety of Property Investment Opportunities.</div>
+        <div class="item">Our Finance Department Find Financial Solutions to Help you Invest Safely and Correctly</div>
+        <div class="item">Over 500 Clients and Two Delivered Projects. Three International Branches</div>
+    </div>
+
+    <footer>
+        <p>&copy;Edwin 2025.</p>
+    </footer>
+</body>
+</html>
